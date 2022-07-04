@@ -1,21 +1,21 @@
 let bookList = [];
 
 function displayBooks() {
-  const outputFiled = document.getElementById('outputField');
+  const outputFiled = document.getElementById('displayField');
   outputFiled.innerHTML = '';
 
   bookList.forEach((book) => {
-    const outputField = document.getElementById('outputField');
+    const outputField = document.getElementById('displayField');
     const bookListDiv = document.createElement('div');
     const bookName = document.createElement('h2');
     const bookAuthor = document.createElement('h3');
     const removeBtn = document.createElement('button');
-    removeBtn.innerText = 'Remove';
+    removeBtn.innerText = 'remove book';
     const line = document.createElement('hr');
     removeBtn.classList.add('delete');
 
-    bookName.innerHTML = `${book.bookTitle}`;
-    bookAuthor.innerHTML = `${book.bookAuthor}`;
+    bookName.innerHTML = `${book.titleName}`;
+    bookAuthor.innerHTML = `${book.authorName}`;
 
     outputField.append(bookListDiv);
     bookListDiv.append(bookName, bookAuthor, removeBtn, line);
@@ -30,14 +30,14 @@ function displayBooks() {
 
 window.addEventListener('load', () => {
   bookList = JSON.parse(localStorage.getItem('bookList')) || [];
-  const inputform = document.getElementById('bookForm');
+  const inputform = document.getElementById('form');
 
   inputform.addEventListener('submit', (e) => {
     e.preventDefault();
 
     const book = {
-      bookTitle: e.target.elements.bookTitle.value,
-      bookAuthor: e.target.elements.bookAuthor.value,
+      titleName: e.target.elements.titleName.value,
+      authorName: e.target.elements.authorName.value,
     };
 
     bookList.push(book);
@@ -49,4 +49,3 @@ window.addEventListener('load', () => {
 
   displayBooks();
 });
-

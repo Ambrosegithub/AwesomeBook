@@ -8,14 +8,23 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="outputField">
-    </div>
-    <h1>Awesome Book</h1>
-    <form  class="bookForm" id="bookForm">
-        
-        <input type="text" id="bookTitle" class="bookTitle" name="bookTitle" placeholder="Title"> <br> <br>
-        <input type="text" id="bookAuthor" class="bookAuthor" name="bookAuthor" placeholder="Author"> <br> <br>
-        <input type="submit" value="Add" id="addBtn" class="addBtn">
+    <div id="displayField"></div>
+
+    <h1>Awesome Books</h1>
+
+    <form id="form" class="form">
+      <input type="text" placeholder="Title" class="titleName" id="titleName" />
+      <br />
+      <br />
+      <input
+        type="text"
+        placeholder="Author"
+        class="authorName"
+        id="authorName"
+      />
+      <br />
+      <br />
+      <button class="btn" type="submit">Add</button>
     </form>
     <script src="app.js"></script>
   </body>
