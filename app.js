@@ -19,7 +19,6 @@ function displayBooks() {
 
     outputField.append(bookListDiv);
     bookListDiv.append(bookName, bookAuthor, removeBtn, line);
-
     removeBtn.addEventListener('click', () => {
       bookList = bookList.filter((t) => t !== book);
       localStorage.setItem('bookList', JSON.stringify(bookList));
