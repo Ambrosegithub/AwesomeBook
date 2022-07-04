@@ -1,10 +1,10 @@
 #form-cont {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
 }
 
 #form-cont input {
-    width: 100%;
+  width: 100%;
 }
