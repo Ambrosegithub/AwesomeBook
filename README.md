@@ -1,13 +1,13 @@
 ## Project Name
 
-"Awesome Book"  is a project design to add and remove book from the web page, its a collaborative project set up by Microverse as a core requirement. 
+"Awesome Book refactor"  is a project design to add and remove book from the web page, its a collaborative project set up by Microverse as a core requirement. 
 
-It is set up to meet both your needs and our needs. 
+It is was redesign with javascript class, class method. 
 
 ## Built With
 The major used for this project are : 
 HTML,
-Javascript
+Javascript 
 
 ## Technologies used
 The amazing tecnologies for this project are:
