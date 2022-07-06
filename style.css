@@ -64,9 +64,9 @@ ul li {
 }
 
 .delete {
-  margin-left: 150px;
+   
   box-shadow: 3px 4px black;
-  margin: 3px;
+  margin: 3px 3px 3px 150px;
 }
 
 hr {
