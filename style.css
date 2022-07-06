@@ -1,10 +1,78 @@
-#form-cont {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.form {
   display: flex;
   flex-direction: column;
+  gap: 20px;
   width: 100%;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  background-color: bisque;
+}
+
+#listname {
+  display: flex;
   gap: 20px;
 }
 
-#form-cont input {
-  width: 100%;
+ul li {
+  list-style-type: none;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 50%;
+  align-self: center;
+}
+
+#top-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  gap: 50px;
+}
+
+#inputdiv {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn {
+  width: 30px;
+  align-self: flex-end;
+  box-shadow: 2px 3px black;
+}
+
+#displayField {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 2px solid #333;
+  width: 50%;
+}
+
+.delete {
+  margin-left: 150px;
+  box-shadow: 3px 4px black;
+  margin: 3px;
+}
+
+hr {
+  width: 100px;
+  height: 2px;
+  background-color: grey;
+  display: flex;
+  align-self: center;
 }
