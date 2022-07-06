@@ -29,7 +29,7 @@ class bookStore {
     const books = bookStore.getbookBank();
     books.forEach((book, index) => {
       if (book.title === title) {
-        books.splice(index, 1);
+        books.slice(index, 1);
       }
     });
     localStorage.setItem('books', JSON.stringify(books));
