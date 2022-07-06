@@ -8,23 +8,30 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="displayField"></div>
-
-    <h1>Awesome Books</h1>
-
+    <div id="top-part">
+      <h1>All Awesome Books</h1>
+      <div id="displayField"></div>
+    </div>
     <form id="form" class="form">
-      <input type="text" placeholder="Title" class="titleName" id="titleName" />
-      <br />
-      <br />
-      <input
-        type="text"
-        placeholder="Author"
-        class="authorName"
-        id="authorName"
-      />
-      <br />
-      <br />
-      <button class="btn" type="submit">Add</button>
+      <hr />
+      <div id="container">
+        <div id="inputdiv">
+          <h2>Add new Book</h2>
+          <input
+            type="text"
+            placeholder="Title"
+            class="titleName"
+            id="titleName"
+          />
+          <input
+            type="text"
+            placeholder="Author"
+            class="authorName"
+            id="authorName"
+          />
+          <button class="btn" type="submit">Add</button>
+        </div>
+      </div>
     </form>
     <script src="app.js"></script>
   </body>
